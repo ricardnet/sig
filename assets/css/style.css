@@ -1,0 +1,236 @@
+/* Variabel warna utama */
+:root {
+    --primary-color: #2C3E50;    /* Warna utama - biru gelap */
+    --secondary-color: #3498DB;   /* Warna sekunder - biru muda */
+    --success-color: #27AE60;     /* Warna sukses - hijau */
+    --danger-color: #E74C3C;      /* Warna bahaya - merah */
+    --warning-color: #F1C40F;     /* Warna peringatan - kuning */
+}
+
+/* Komponen Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Komponen Dashboard */
+.dashboard-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.dashboard-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.dashboard-card .title {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.dashboard-card .value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* Komponen Tabel */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.custom-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Komponen Form */
+.custom-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+body {
+    background: linear-gradient(135deg, #0d6efd20 0%, #0d6efd05 100%);
+    min-height: 100vh;
+}
+.hero-section {
+    padding: 100px 0;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.05);
+    margin: 40px 0;
+}
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+.feature-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+.btn-custom {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.btn-custom:hover {
+    transform: scale(1.05);
+}
+.footer {
+    background: white;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 50px;
+}
+.feature-icons {
+    margin-bottom: 20px;
+}
+.icon-group {
+    font-size: 2rem;
+}
+.health-features {
+    text-align: left;
+    padding: 10px;
+}
+.health-features p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.health-features i {
+    font-size: 1rem;
+    margin-right: 8px;
+}
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.bi-heart-pulse {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.hover-shadow {
+    transition: all 0.3s ease;
+}
+.hover-shadow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+.emergency-contact {
+    transition: all 0.3s ease;
+}
+.emergency-contact:hover {
+    transform: scale(1.02);
+}
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+.icon-wrapper {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
